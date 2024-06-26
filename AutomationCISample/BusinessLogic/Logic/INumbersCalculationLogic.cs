@@ -5,4 +5,5 @@ public interface INumbersCalculationLogic
     int Add(int a, int b);
     int AddThree(int source);
     bool IsEven(int source);
+    int AddOne(int source);
 }

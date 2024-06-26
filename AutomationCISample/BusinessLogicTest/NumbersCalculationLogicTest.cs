@@ -51,4 +51,18 @@ public class NumbersCalculationLogicTest
         var result = numbersCalculationLogic.IsEven(3);
         Assert.False(result);
     }
+
+    [Fact]
+    public void AddOne_ReturnsNumberPlusOne()
+    {
+        var result = numbersCalculationLogic.AddOne(2);
+        Assert.Equal(3, result);
+    }
+
+    [Fact]
+    public void AddOne_ReturnsNumberPlusOneWhenNegative()
+    {
+        var result = numbersCalculationLogic.AddOne(-2);
+        Assert.Equal(-1, result);
+    }
 }
