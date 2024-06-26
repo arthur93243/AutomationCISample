@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+AutomationCISample/.idea
+AutomationCISample/BusinessLogic/bin
+AutomationCISample/BusinessLogic/obj
+*.DotSettings.user
