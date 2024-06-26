@@ -1,56 +1,34 @@
-# Prerequisites
-*.d
+.DS_Store
+*.sublime-workspace
+.idea/
+bin/
+obj/
+.vs/
+dist/
+.vscode/
+LocalFlow/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+*.DotSettings.*
 
-# Linker output
-*.ilk
-*.map
-*.exp
+.env
 
-# Precompiled Headers
-*.gch
-*.pch
+## config files
+testsettings.local.json
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+## environment config files
+appsettings.*.json
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+## temporary testing scripts
+TmpTest.cs
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Dependency directories
+node_modules/
+jspm_packages/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# archive
+*.zip
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-AutomationCISample/.idea
-AutomationCISample/BusinessLogic/bin
-AutomationCISample/BusinessLogic/obj
-*.DotSettings.user
+# logs
+*.log
+
+global.json
