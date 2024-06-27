@@ -19,7 +19,6 @@ public class NumbersCalculationLogic : INumbersCalculationLogic
 
     public int AddOne(int source)
     {
-        int a = 0;
         return source + 1;
     }
 }
