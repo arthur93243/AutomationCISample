@@ -1,0 +1,23 @@
+name: jenkins-and-ngrok-compose
+services:
+  jenkins:
+    build:
+      context: ./
+      dockerfile: my-jenkins.dockerfile
+    container_name: my-jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - {your-jenkins-file-dir}:/var/jenkins_home
+  nhrok:
+    build:
+      context: ./
+      dockerfile: my-ngrok.dockerfile
+    container_name: my-ngrok
+    ports:
+      - "4040:4040"
+    env_file:
+      - .env
+    depends_on:
+      - jenkins
