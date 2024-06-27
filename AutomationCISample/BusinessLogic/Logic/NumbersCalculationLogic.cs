@@ -19,6 +19,6 @@ public class NumbersCalculationLogic : INumbersCalculationLogic
 
     public int AddOne(int source)
     {
-        return source + 1 + 1;
+        return source + 1;
     }
 }
